@@ -1,15 +1,15 @@
 #include "api.hh"
 
-Api::Api()
+APITreeFriends::Api::Api()
 {
 
 };
 
-Api::~Api() {
+APITreeFriends::Api::~Api() {
 
 };
 
-void Api::receiveRequest(Request *req) {
+void APITreeFriends::Api::receiveRequest(Request *req) {
 	connecter(req); // blacklist
 	parser(req); // Jahwar
 	method(req); // Get ressource, Post tout ça

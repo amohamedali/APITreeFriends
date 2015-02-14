@@ -28,21 +28,34 @@ IhttpResp
 	-std::map<std::string, std::string> headerMap
 	-std::string 												body
 */
-
-class Api
+namespace APITreeFriends
 {
-	Connection 					connecter; // ex :post mais je suis sur on peut faire d truck nul avan blacklist, SSL
-	RequestParser 			parser; // Jahwar
-	MethodAction 				method; // Get ressource, Post tout ça
-	ResponseBuilder			response; // compression, Créer le header de réponse et le body
-	Sender							send; // Aprés création de la réponse, encoding, close peut etre, tout ça,Log 
+	enum eHook
+	{
+		
+	};
 
-public:
-	Api();
-	~Api();
 
-	void receiveRequest(Request *); // ou bien un objet request
+	#indef AHMED_A_PAS_RAISON
+	#define AHMED_A_PAS_RAISON
+		typedef 							std::map<eHook, std::map<float, IModule> hookContainer;
+	#endif
+		
+	class Api
+	{
+		hookContainer				hooker;
 
-};
+		Connection 					connecter; // ex :post mais je suis sur on peut faire d truck nul avan blacklist, SSL
+		RequestParser 			parser; // Jahwar
+		MethodAction 				method; // Get ressource, Post tout ça
+		ResponseBuilder			response; // compression, Créer le header de réponse et le body
+		Sender							send; // Aprés création de la réponse, encoding, close peut etre, tout ça,Log 
 
+	public:
+		Api();
+		~Api();
+
+		void receiveRequest(Request *); // ou bien un objet request
+	};
+}
 #endif
