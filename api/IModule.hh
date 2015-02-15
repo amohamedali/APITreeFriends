@@ -9,7 +9,7 @@ namespace APITreeFriends
   {
   public:
     virtual ~IModule() {}
-    virtual std::map<eHook, IRunable> plug() const = 0;
+    virtual std::map<eHook, IRunable *> &plug() const = 0;
   };
 }
 

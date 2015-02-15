@@ -6,10 +6,10 @@ namespace APITreeFriends
   class IRunable
     {
     public:
-      IRunable();
-      ~IRunable();
+      virtual ~IRunable() {}
       
-      void run(IConnection &);
+      virtual int   getPriority() const = 0;
+      virtual void  run(IConnection &) = 0;
     };  
 };
 

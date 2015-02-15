@@ -26,8 +26,8 @@ namespace APITreeFriends
     
       virtual void                  setPort(const short) = 0;
       virtual void                  setState(const eState) = 0;
-      virtual void                  setRawReq() = 0;
-      virtual void                  setIp() = 0;
+      virtual void                  setRawReq(const std::string &) = 0;
+      virtual void                  setIp(const std::string &) = 0;
     };  
 }
 
