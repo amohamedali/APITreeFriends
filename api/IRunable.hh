@@ -1,6 +1,8 @@
 #ifndef IRUNABLE_HH_
 #define IRUNABLE_HH_
 
+#include "IConnection.hh"
+
 namespace APITreeFriends
 {
   class IRunable

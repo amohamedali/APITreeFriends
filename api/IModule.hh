@@ -2,6 +2,8 @@
 #define IMODULE_HH_
 
 #include "IObserver.hh"
+#include "IRunable.hh"
+#include <map>
 
 namespace APITreeFriends
 {
