@@ -3,14 +3,14 @@
 
 namespace APITreeFriends
 {
-	class IRunable
-		{
-		public:
-			IRunable();
-			~IRunable();
-			
-			void run(IConnection &);
-		};	
+  class IRunable
+    {
+    public:
+      IRunable();
+      ~IRunable();
+      
+      void run(IConnection &);
+    };  
 };
 
 #endif

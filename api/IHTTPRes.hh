@@ -5,16 +5,16 @@
 
 namespace APITreeFriends
 {
-	class IHTTPRes : public IHTTPMes
-	{
-	public:
-		virtual ~IHTTPRes() {}
-		virtual std::string &getStatusCode() const = 0;
-		virtual std::string &getStatusMes() const = 0;
+  class IHTTPRes : public IHTTPMes
+  {
+  public:
+    virtual ~IHTTPRes() {}
+    virtual std::string &getStatusCode() const = 0;
+    virtual std::string &getStatusMes() const = 0;
 
-		virtual void 				setStatusCode(const std::string &) = 0;
-		virtual void 				setStatusMes(const std::string &) = 0;
-	};
+    virtual void        setStatusCode(const std::string &) = 0;
+    virtual void        setStatusMes(const std::string &) = 0;
+  };
 }
 
 #endif

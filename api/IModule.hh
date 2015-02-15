@@ -5,12 +5,12 @@
 
 namespace APITreeFriends
 {
-	class IModule
-	{
-	public:
-		virtual ~IModule() {}
-		virtual std::map<eHook, IRunable> plug() const = 0;
-	};
+  class IModule
+  {
+  public:
+    virtual ~IModule() {}
+    virtual std::map<eHook, IRunable> plug() const = 0;
+  };
 }
 
 #endif
