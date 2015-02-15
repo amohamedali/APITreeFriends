@@ -1,6 +1,8 @@
 #ifndef IMODULE_HH_
 #define IMODULE_HH_
 
+#include "IObserver.hh"
+
 namespace APITreeFriends
 {
 	class IModule
