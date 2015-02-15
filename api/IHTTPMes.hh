@@ -1,11 +1,26 @@
 #ifndef IHTTPMES_HH_
 #define IHTTPMES_HH_
 
+/*!
+* \file IHTTPMes.hh
+* \brief Interface des messages
+* \author cristi_a
+* \version 0.34
+*/
+
 #include <string>
 #include <map>
 
+/*! \namespace APITreeFriends
+*   
+* espace de nommage regroupant la totalité des classes
+* de l'api
+*/
 namespace APITreeFriends
 {
+  /*! \class IHTTPMes
+  *   \brief classe représentant les block communs à la requête et à la reponse
+  */
   typedef std::map<std::string, std::string> headerMap;
   class IHTTPMes
   {
