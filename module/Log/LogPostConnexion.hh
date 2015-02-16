@@ -1,5 +1,5 @@
-#ifndef LOGPOSTEND_HPP
-# define LOGPOSTEND_HPP
+#ifndef LOGPOSTCONNEXION_HPP
+# define LOGPOSTCONNEXION_HPP
 
 #include "Log.hh"
 
@@ -10,10 +10,10 @@
  */
 
 /*!
- * \class LogPreconnexion
+ * \class LogPostConnexion
  * \brief Classe heritant de IRunable
  */
-class LogPreconnexion : public IRunable {
+class LogPostConnexion : public IRunable {
 private:
   const int                     priority = 1000;
   std::ofstream                 _myfile;
@@ -23,11 +23,11 @@ public:
   /*!
    * \brief Constructeur, initialise la gestion du temps, et ouvre le fichier de log
    */
-  LogPreconnexion();
+  LogPostConnexion();
    /*!
     * \brief Destructeur, ferme le fichier de log
     */
-  ~LogPreconnexion(;)
+  ~LogPostConnexion(;)
   /*!
    * \brief Getter de la priorité du module dans le hook PRECONNEXION
    * \return int , 1000, pour passer en dernier (C'est des log ...)
@@ -39,4 +39,4 @@ public:
   void                          run(IConnection &);
 };
 
-#endif /* !LOGPOSTEND_HPP */
+#endif /* !LOGPOSTCONNEXION_HPP */

@@ -68,7 +68,7 @@ public:
   std::map<eHOOK, IRunable *> 	&plug() const;
 };
 
-class LogPostend : public IRunable {
+class LogPostSend : public IRunable {
 private:
   const int	priority = 1000;
   std::ofstream	_myfile;
@@ -76,12 +76,12 @@ private:
   struct tm	*_curtime;
 
 public:
-  LogPostend();
-  ~LogPostend();
+  LogPostSend();
+  ~LogPostSend();
   void	run(IConnection &);
 };
 
-class LogPreconnexion : public IRunable {
+class LogPostConnexion : public IRunable {
 private:
   const int	priority = 1;
   std::ofstream	_myfile;
@@ -89,8 +89,8 @@ private:
   struct tm	*_curtime;
 
 public:
-  LogPreconnexion();
-  ~LogPreconnexion();
+  LogPostConnexion();
+  ~LogPostConnexion();
   void	run(IConnection &);
 };
 

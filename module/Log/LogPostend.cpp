@@ -1,6 +1,6 @@
-#include "LogPostend.hh"
+#include "LogPostSend.hh"
 
-void    LogPostend::run(IConnection &data) {
+void    LogPostSend::run(IConnection &data) {
   this->_myfile << "Out: "  << getIp() << " - "
 		<< "\"" << getrawReq() <<"\" "
 		<< getstatutCode() << " "
@@ -8,16 +8,16 @@ void    LogPostend::run(IConnection &data) {
 		<< asctime(this->_curtime);
 }
 
-LogPostend::LogPostend() {
+LogPostSend::LogPostSend() {
   this->_tm = time(NULL);
   _curtime = localtime ( &_tm );
   this->_myfile.open("log.txt", std::ios::in | std::ios::out | std::ios::app);
 }
 
-LogPostend::~LogPostend() {
+LogPostSend::~LogPostSend() {
   this->_myfile.close();
 }
 
-int LogPostend::getPriority() const {
+int LogPostSend::getPriority() const {
   return (this->priority);
 }

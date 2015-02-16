@@ -44,7 +44,7 @@ namespace APITreeFriends
     virtual void        setStatusCode(const std::string &) = 0;
     /*!
      * \brief Setter du message relatif au status code de la réponse
-     * \param std;;string &StatusMes, Nouveau message relatif au status code de la réponse
+     * \param std::string &StatusMes, Nouveau message relatif au status code de la réponse
      */
     virtual void        setStatusMes(const std::string &) = 0;
   };

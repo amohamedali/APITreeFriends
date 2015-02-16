@@ -3,7 +3,7 @@
 using namespace std; // sera retirer quand on compilera
 
 Log::Log() {
-  runpostend = new LogPostend;
+  runpostend = new LogPostSend;
   runpreco = new LogPreconnexion;
   hookinet[POST_CONNEXION] = runpreco;
   hookinet[PRE_SEND] = runpostend;

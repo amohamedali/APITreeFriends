@@ -18,7 +18,7 @@ using namespace std;
 test.logentry();
 }*/
 
-void	LogPreconnexion::run(IConnection &data) {
+void	LogPostConnexion::run(IConnection &data) {
   this->_myfile << "In: " << getIp() << " - "
 		<< "\"" << getrawReq() <<"\" "
 		<< getstatutCode() << " "
@@ -26,17 +26,17 @@ void	LogPreconnexion::run(IConnection &data) {
 		<< asctime(this->_curtime);
 }
 
-LogPreconnexion::LogPreconnexion() {
+LogPostConnexion::LogPostConnexion() {
   this->_tm = time(NULL);
   _curtime = localtime ( &_tm );
   this->_myfile.open("log.txt", std::ios::in | std::ios::out | std::ios::app);
 }
 
-LogPreconnexion::~LogPreconnexion() {
+LogPostConnexion::~LogPostConnexion() {
   this->_myfile.close();
 }
 
-void	LogPostend::run(IConnection &data) {
+void	LogPostSend::run(IConnection &data) {
   this->_myfile << "Out: "  << getIp() << " - "
 		<< "\"" << getrawReq() <<"\" "
 		<< getstatutCode() << " "
@@ -44,13 +44,13 @@ void	LogPostend::run(IConnection &data) {
 		<< asctime(this->_curtime);
 }
 
-LogPostend::LogPostend() {
+LogPostSend::LogPostSend() {
   this->_tm = time(NULL);
   _curtime = localtime ( &_tm );
   this->_myfile.open("log.txt", std::ios::in | std::ios::out | std::ios::app);
 }
 
-LogPostend::~LogPostend() {
+LogPostSend::~LogPostSend() {
   this->_myfile.close();
 }
 
@@ -59,8 +59,8 @@ Log::~Log() {
 }
 
 Log::Log() {
-  runpostend = new LogPostend;
-  runpreco = new LogPreconnexion;
+  runpostend = new LogPostSend;
+  runpreco = new LogPostConnexion;
   hook_my_ass[POST_CONNEXION] = runpreco;
   hook_my_ass[PRE_SEND] = runpostend;
 }

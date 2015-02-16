@@ -1,6 +1,6 @@
-#include "LogPreconnexion.cpp"
+#include "LogPostConnexion.cpp"
 
-void    LogPreconnexion::run(IConnection &data) {
+void    LogPostConnexion::run(IConnection &data) {
   this->_myfile << "In: " << getIp() << " - "
 		<< "\"" << getrawReq() <<"\" "
 		<< getstatutCode() << " "
@@ -8,16 +8,16 @@ void    LogPreconnexion::run(IConnection &data) {
 		<< asctime(this->_curtime);
 }
 
-LogPreconnexion::LogPreconnexion() {
+LogPostConnexion::LogPostConnexion() {
   this->_tm = time(NULL);
   _curtime = localtime ( &_tm );
   this->_myfile.open("log.txt", std::ios::in | std::ios::out | std::ios::app);
 }
 
-LogPreconnexion::~LogPreconnexion() {
+LogPostConnexion::~LogPostConnexion() {
   this->_myfile.close();
 }
 
-int LogPreconnexion::getPriority() const {
+int LogPostConnexion::getPriority() const {
   return (this->priority);
 }
