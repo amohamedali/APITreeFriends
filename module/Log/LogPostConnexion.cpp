@@ -1,10 +1,10 @@
 #include "LogPostConnexion.cpp"
 
 void    LogPostConnexion::run(IConnection &data) {
-  this->_myfile << "In: " << getIp() << " - "
-		<< "\"" << getrawReq() <<"\" "
-		<< getstatutCode() << " "
-		<< "\"" << getstatutMes() << "\" - "
+  this->_myfile << "In: " << data.getIp() << " - "
+		<< "\"" << data.getrawReq() <<"\" "
+		<< data.getstatutCode() << " "
+		<< "\"" << data.getstatutMes() << "\" - "
 		<< asctime(this->_curtime);
 }
 
