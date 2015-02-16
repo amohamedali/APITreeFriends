@@ -46,4 +46,14 @@ Concernant la gestion de la priorité sur un hook, IRunable impose à vos classe
 
 La fonction run des IRunable sera appelé avec en paramètre une référence sur un IConnection contenant la totalité des données nécessaire.
 
-Le IConnection est en effet composé des 
+Le IConnection contient les informations relatives à la connection avec le client, ainsi que sur la requète et la réponse via un IHTTPReq et un IHTTPRes, qui héritent tout deux de IHTTPMes.
+
+IHTTPReq et IHTTPRes correspondent respectivement à la requète en cours de traitement et à la réponse en cours de création.  
+
+
+#orthographe
+
+
+
+IObserver:
+http://i.huffpost.com/gen/2428526/thumbs/o-TELETUBBIES-SOLEIL-BEBE-facebook.jpg
