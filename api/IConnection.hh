@@ -1,6 +1,19 @@
 #ifndef ICONNECTION_HH_
 #define ICONNECTION_HH_
 
+/*! \mainpage My Personal Index Page
+ *
+ * \section intro_sec Introduction
+ *
+ * This is the introduction.
+ *
+ * \section install_sec Installation
+ *
+ * \subsection step1 Step 1: Opening the box
+ *
+ * etc...
+ */
+
 /*!
  * \file IConnection.hh
  * \brief No need to explain, got #SWAG
@@ -18,7 +31,7 @@
  */
 namespace APITreeFriends
 {
-  /* \Enum eConnectionState
+  /*! \enum eConnectionState
    * \brief Enum des états possibles de connection
 */
   enum eConnectionState
