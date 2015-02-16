@@ -42,4 +42,8 @@ L'interface IModule impose aux différents modules de renvoyer une std::map<eCon
 
 Concernant la gestion de la priorité sur un hook, IRunable impose à vos classes une fonction getPriority() qui nous renverra le niveau de priorité sur le hook.
 
-			Le niveau de priorité va de 1 à 1000
+			Le niveau de priorité va de 1 à 1000, en sachant que plus le niveau est haut plus l'appel sera effectué à la fin.
+
+La fonction run des IRunable sera appelé avec en paramètre une référence sur un IConnection contenant la totalité des données nécessaire.
+
+Le IConnection est en effet composé des 
