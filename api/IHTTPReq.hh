@@ -29,23 +29,23 @@ namespace APITreeFriends
     virtual ~IHTTPReq() {}
     /*!
     * \brief Getter de la chaine de caractère de la méthode appelé
-    * \return Retourne une référence d'une string
+    * \return std::string &, Retourne une référence d'une string
     */
     virtual std::string &getMethod() const = 0;
     /*!
     * \brief Getter de la chaine de caractère de la ressource pointée
-    * \return Retourne une référence d'une string
+    * \return std::string &, Retourne une référence d'une string
     */
     virtual std::string &getRessource() const = 0;
 
     /*!
     * \brief Setter de la chaine de caractère de la méthode appelé
-    * \param methode Variable modifiant la méthode de la requête
+    * \param methode std::string & Variable modifiant la méthode de la requête
     */
     virtual void        setMethod(const std::string &) const = 0;
     /*!
     * \brief Setter de la chaine de caractère de la ressource pointée
-    * \param std::string ressource Variable modifiant la ressource de la requête
+    * \param ressource std::string &, Variable modifiant la ressource de la requête
     */
     virtual void        setRessource(const std::string &) const = 0;
   
