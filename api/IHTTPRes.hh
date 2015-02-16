@@ -3,7 +3,7 @@
 
 /*!
  * \file IHTTPRes.hh
- * \author cristi_a
+ * \author lemoig_v
  * \version 21
  */
 
@@ -29,18 +29,18 @@ namespace APITreeFriends
     virtual ~IHTTPRes() {}
     /*!
      * \brief Getter du status code de la réponse
-     * \return std::string & , Status code actuel de la réponse sous forme de string
+     * \return std::string & , Status code actuel de la réponse
      */
     virtual std::string &getStatusCode() const = 0;
     /*!
      * \brief Getter du message relatif au status code de la réponse
-     * \return std::string & , Message relatif au status code de la réponse, sous forme de string
+     * \return std::string & , Message relatif au status code de la réponse
      */
     virtual std::string &getStatusMes() const = 0;
 
     /*!
      * \brief Setter du statut code de la réponse
-     * \param std::string &StatusCode, Nouveau statusCode sous forme de string
+     * \param std::string &StatusCode, Nouveau statusCode
      */
     virtual void        setStatusCode(const std::string &) = 0;
     /*!
