@@ -5,7 +5,7 @@
 * \file IHTTPMes.hh
 * \brief Interface des messages
 * \author cristi_a
-* \version 0.34
+* \version 0.54
 */
 
 #include <string>
@@ -59,14 +59,22 @@ namespace APITreeFriends
        * \param HTTPVersion Version HTTP du message de type std::string
        */
       virtual void                setHTTPVersion(const std::string &) = 0;
-
       /*!
        * \brief Getter d'un headerField value
        * \param headerKey Nom du header de type std::string
        * \return std::string value d'un HeaderField
        */
       virtual std::string         &getHeaderField(const std::string &) const = 0;
+      /*!
+       * \brief Setter d'un headerField value
+       * \param headerKey Nom du headerField de type std::string
+       * \param headerValue Value du headerField de type std::string
+       */
       virtual void                setHeaderField(const std::string &, const std::string &) = 0;
+      /*!
+       * \brief Supression d'un headerField
+       * \param headerKey Nom du headerField de type std::string
+       */
       virtual void                removeHeaderField(const std::string &) = 0;
   };
 }
