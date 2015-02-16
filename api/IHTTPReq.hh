@@ -42,12 +42,12 @@ namespace APITreeFriends
     * \brief Setter de la chaine de caractère de la méthode appelé
     * \param methode std::string & Variable modifiant la méthode de la requête
     */
-    virtual void        setMethod(const std::string &) const = 0;
+    virtual void        setMethod(const std::string &) = 0;
     /*!
     * \brief Setter de la chaine de caractère de la ressource pointée
     * \param ressource std::string &, Variable modifiant la ressource de la requête
     */
-    virtual void        setRessource(const std::string &) const = 0;
+    virtual void        setRessource(const std::string &) = 0;
   
   };
 }
