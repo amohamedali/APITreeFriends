@@ -62,7 +62,7 @@ namespace APITreeFriends
       /*!
        * \brief Getter d'un headerField value
        * \param headerKey Nom du header de type std::string
-       * \return std::string value d'un HeaderField
+       * \return std::string Value d'un HeaderField
        */
       virtual std::string         &getHeaderField(const std::string &) const = 0;
       /*!
