@@ -29,23 +29,23 @@ namespace APITreeFriends
     virtual ~IHTTPRes() {}
     /*!
      * \brief Getter du status code de la réponse
-     * \return std::string &StatusCode
+     * \return std::string & , Status code actuel de la réponse sous forme de string
      */
     virtual std::string &getStatusCode() const = 0;
     /*!
      * \brief Getter du message relatif au status code de la réponse
-     * \return std::string &StatusMes
+     * \return std::string & , Message relatif au status code de la réponse, sous forme de string
      */
     virtual std::string &getStatusMes() const = 0;
 
     /*!
      * \brief Setter du statut code de la réponse
-     * \param std::string &StatusCode
+     * \param std::string &StatusCode, Nouveau statusCode sous forme de string
      */
     virtual void        setStatusCode(const std::string &) = 0;
     /*!
      * \brief Setter du message relatif au status code de la réponse
-     * \param std;;string &StatusMes
+     * \param std;;string &StatusMes, Nouveau message relatif au status code de la réponse
      */
     virtual void        setStatusMes(const std::string &) = 0;
   };
