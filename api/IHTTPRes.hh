@@ -17,8 +17,7 @@
 namespace APITreeFriends
 {
   /*! \class IHTTPRes
-   * \class permettant de récupérer les donnés propre à la réponse
-   * \présente dans la classe mère IHTTPMes
+   * \brief Classe permettant de récupérer les donnés propre à la réponse présente dans la classe mère IHTTPMes
    */
   class IHTTPRes : public IHTTPMes
   {

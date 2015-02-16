@@ -19,7 +19,7 @@
 namespace APITreeFriends
 {
   /*! \class IHTTPMes
-  *   \brief Classe représentant les block communs à la requête et à la reponse
+  *   \brief Interface des messages contenu dans IHTTPReq et IHTTPRes
   */
   class IHTTPMes
   {
