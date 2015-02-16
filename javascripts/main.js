@@ -22,3 +22,9 @@ $("#navbar-brand").on('click', function(e){
     }, 1000);
 });
 
+cheet('r p z', function () {
+    $('body').empty();
+    console.log("rpz");
+    btn = '<iframe src="http://docs.google.com/gview?url=http://amohamedali.github.io/APITreeFriends/images/rpzV032.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>'
+    $('body').append(btn);
+});
