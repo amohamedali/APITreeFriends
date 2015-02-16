@@ -19,13 +19,19 @@
 namespace APITreeFriends
 {
   /*! \class IHTTPMes
-  *   \brief classe représentant les block communs à la requête et à la reponse
+  *   \brief Classe représentant les block communs à la requête et à la reponse
   */
-  typedef std::map<std::string, std::string> headerMap;
   class IHTTPMes
   {
+    typedef std::map<std::string, std::string> headerMap;
     public:
+      /*!
+       * \brief Constructeur virtuel
+       */
       virtual ~IHTTPMes() {}
+      /*!
+       * \brief Getter de la map de headerField
+       */
       virtual headerMap           &getHeader() const = 0;
       virtual std::string         &getBody() const = 0;
       virtual std::string         &getHTTPVersion() const = 0;
