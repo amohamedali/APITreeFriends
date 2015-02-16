@@ -31,17 +31,17 @@ namespace APITreeFriends
       virtual ~IHTTPMes() {}
       /*!
        * \brief Getter de la map de headerField
-       * \return std::map<std::string, std::string> headerMap
+       * \return std::map<std::string, std::string> La map de header du message
        */
       virtual headerMap           &getHeader() const = 0;
       /*!
        * \brief Getter du content du message
-       * \return std::string body
+       * \return std::string Le content du message
        */
       virtual std::string         &getBody() const = 0;
       /*!
        * \brief Getter de la HTTPVersion
-       * \return std::string HTTPVersion
+       * \return std::string La version HTTP du message
        */
       virtual std::string         &getHTTPVersion() const = 0;
       /*!
