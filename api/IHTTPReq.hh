@@ -11,9 +11,6 @@
 #include "IHTTPMes.hh"
 
 /*! \namespace APITreeFriends
-*
-* espace de nommage regroupant la totalité des classes
-* de l'api
 */
 namespace APITreeFriends
 {

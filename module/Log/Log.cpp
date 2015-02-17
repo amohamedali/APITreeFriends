@@ -1,19 +1,15 @@
 #include "ModuleLog.hpp"
 
-using namespace std; // sera retirer quand on compilera
-
 Log::Log() {
-  runpostend = new LogPostSend;
-  runpreco = new LogPreconnexion;
-  hookinet[POST_CONNEXION] = runpreco;
-  hookinet[PRE_SEND] = runpostend;
+  hookinet[POST_CONNECTION] = new LogPostConnection();
+  hookinet[PRE_SEND] = new LogPreSend();
 }
 
 Log::~Log() {
-  delete runpreco;
-  delete runpostend;
+  delete hookinet[POST_CONNECTION];
+  delete hookinet[PRE_SEND];
 }
 
-std::map<enum eHOOK, IRunable *>      Log::&plug() const {
+std::map<eHook, IRunnable *>      Log::&plug() const {
   return (hookinet);
 }

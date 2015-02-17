@@ -9,18 +9,16 @@
 */
 
 #include "IObserver.hh"
-#include "IRunable.hh"
+#include "IRunnable.hh"
 #include <map>
 
 /*! \namespace APITreeFriends
-* \brief Espace de nommage regroupant la totalité des classes
-* de l'api
 */
 namespace APITreeFriends
 {
 	/*! \class IModule
   *   \brief Interface d'implémentation des modules
-  * 	Les IModule ne sont en définitive que des containers de IRunable.
+  * 	Les IModule ne sont en définitive que des containers de IRunnable.
   */
   class IModule
   {
@@ -31,10 +29,10 @@ namespace APITreeFriends
     virtual ~IModule() {}
     /*!
      * \brief Getter de la map de hook du Module
-     * Le module renvoie la map<eHook, IRunable*> spécifique au module
-     * \return std::map<eHook, IRunable*> Map de plug du module
+     * Le module renvoie la map<eHook, IRunnable*> spécifique au module
+     * \return std::map<eHook, IRunnable*> Map de plug du module
      */
-    virtual std::map<eHook, IRunable *> &plug() const = 0;
+    virtual std::map<eHook, IRunnable *> &plug() const = 0;
   };
 }
 

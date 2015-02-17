@@ -1,7 +1,5 @@
 #APITreeFriends
 
-
-
 ## Documentation API
 --------------------
 

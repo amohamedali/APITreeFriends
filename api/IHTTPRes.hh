@@ -9,11 +9,8 @@
 
 #include "IHTTPMes.hh"
 
-/*!
- *
- * espace de nommage regroupant la totalité des classes
- * de l'api
- */
+/*! \namespace APITreeFriends
+*/
 namespace APITreeFriends
 {
   /*! \class IHTTPRes

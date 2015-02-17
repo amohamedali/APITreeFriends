@@ -1,23 +1,23 @@
-#include "LogPostConnexion.cpp"
+#include "LogPostConnection.cpp"
 
-void    LogPostConnexion::run(IConnection &data) {
+void    LogPostConnection::run(IConnection &data) {
   this->_myfile << "In: " << data.getIp() << " - "
-		<< "\"" << data.getrawReq() <<"\" "
-		<< data.getstatutCode() << " "
+		<< "\"" << data.getRawReq() <<"\" "
+		<< data.getRes().getStatusCode() << " "
 		<< "\"" << data.getstatutMes() << "\" - "
 		<< asctime(this->_curtime);
 }
 
-LogPostConnexion::LogPostConnexion() {
+LogPostConnection::LogPostConnection() {
   this->_tm = time(NULL);
   _curtime = localtime ( &_tm );
   this->_myfile.open("log.txt", std::ios::in | std::ios::out | std::ios::app);
 }
 
-LogPostConnexion::~LogPostConnexion() {
+LogPostConnection::~LogPostConnection() {
   this->_myfile.close();
 }
 
-int LogPostConnexion::getPriority() const {
+int LogPostConnection::getPriority() const {
   return (this->priority);
 }

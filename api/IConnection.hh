@@ -1,22 +1,9 @@
 #ifndef ICONNECTION_HH_
 #define ICONNECTION_HH_
 
-/*! \mainpage My Personal Index Page
- *
- * \section intro_sec Introduction
- *
- * This is the introduction.
- *
- * \section install_sec Installation
- *
- * \subsection step1 Step 1: Opening the box
- *
- * etc...
- */
-
 /*!
  * \file IConnection.hh
- * \brief No need to explain, got #SWAG
+ * \brief Main object
  * \author lemoig_v
  * \version 21
  */
