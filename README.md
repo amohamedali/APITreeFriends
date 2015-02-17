@@ -7,8 +7,6 @@
 
 * Introduction
 * Fonctionnement
-* Serveur
-* API
 
 ### Introduction
 ----------------
@@ -48,12 +46,4 @@ La fonction run des IRunable sera appelé avec en paramètre une référence sur
 
 Le IConnection contient les informations relatives à la connection avec le client, ainsi que sur la requète et la réponse via un IHTTPReq et un IHTTPRes, qui héritent tout deux de IHTTPMes.
 
-IHTTPReq et IHTTPRes correspondent respectivement à la requète en cours de traitement et à la réponse en cours de création.  
-
-
-#orthographe
-
-
-
-IObserver:
-http://goo.gl/Z5wLbT
+IHTTPReq et IHTTPRes correspondent respectivement à la requète en cours de traitement et à la réponse en cours de création.
