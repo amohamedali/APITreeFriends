@@ -9,17 +9,18 @@
 
 #include <iostream>
 #include <fstream>
-#include "../../api/IConnection.hh"
-#include "../../api/IModule.hh"
-#include "../../api/IRunnable.hh"
+#include "IConnection.hh"
+#include "IModule.hh"
+#include "LogPostConnection.hh"
+#include "LogPreSend.hh"
 
 /*!
  * \class Log
  * \brief Classe contenant la map des hooks où intervient Log, aindi que les IRunnable s associés à ces hooks, Herite de IModule
  */
-class Log : public IModule {
+class Log : public APITreeFriends::IModule {
 private:
-  std::map<eHook, IRunnable *>	hookinet;
+  std::map<APITreeFriends::eHook, APITreeFriends::IRunnable *>	hookinet;
 
 public:
   /*!
@@ -34,7 +35,7 @@ public:
    * \briefb Getter de la map de Hook et d'IRunnable
    * \return std::map<eHook, IRunnable *> & , la map de Hook et d'IRunnable
    */
-  std::map<eHook, IRunnable *> 	&plug() const;
+  const std::map<APITreeFriends::eHook, APITreeFriends::IRunnable *> 	&plug() const;
 };
 
 #endif /* !LOG_H_ */

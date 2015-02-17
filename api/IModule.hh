@@ -32,7 +32,7 @@ namespace APITreeFriends
      * Le module renvoie la map<eHook, IRunnable*> spécifique au module
      * \return std::map<eHook, IRunnable*> Map de plug du module
      */
-    virtual std::map<eHook, IRunnable *> &plug() const = 0;
+    virtual const std::map<eHook, IRunnable *> &plug() const = 0;
   };
 }
 

@@ -13,9 +13,10 @@
  * \class LogPostConnection
  * \brief Classe heritant de IRunnable
  */
-class LogPostConnection : public IRunnable {
+
+class LogPostConnection : public APITreeFriends::IRunnable {
 private:
-  const int                     priority = 1000;
+  int                           priority;
   std::ofstream                 _myfile;
   time_t                        _tm;
   struct tm                     *_curtime;
@@ -27,7 +28,7 @@ public:
    /*!
     * \brief Destructeur, ferme le fichier de log
     */
-  ~LogPostConnection(;)
+  ~LogPostConnection();
   /*!
    * \brief Getter de la priorité du module dans le hook PRECONNEXION
    * \return int , 1000, pour passer en dernier (C'est des log ...)
@@ -36,7 +37,7 @@ public:
   /*!
    *\brief Methode a lancer dans le hook PRECONNEXION
    */
-  void                          run(IConnection &);
+  void                          run(APITreeFriends::IConnection &);
 };
 
 #endif /* !LOGPOSTCONNEXION_HPP */

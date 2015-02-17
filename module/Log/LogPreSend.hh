@@ -13,9 +13,10 @@
  * \class LogPreSend
  * \brief Classe heritant de IRunnable
  */
-class LogPreSend : public IRunnable {
+
+class LogPreSend : public APITreeFriends::IRunnable {
 private:
-  const int                     priority = 1000;
+  int                           priority;
   std::ofstream                 _myfile;
   time_t                        _tm;
   struct tm                     *_curtime;
@@ -37,7 +38,7 @@ public:
   /*!
    *\brief Methode a lancer dans le hook POSTEND
    */
-  void                          run(IConnection &);
+  void                          run(APITreeFriends::IConnection &);
 };
 
 #endif /* !LogPreSend_HPP */

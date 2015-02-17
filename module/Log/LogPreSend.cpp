@@ -1,23 +1,24 @@
 #include "LogPreSend.hh"
 
-void    LogPreSend::run(IConnection &data) {
-  this->_myfile << "Out: "  << data.getIp() << " - "
+void    LogPreSend::run(APITreeFriends::IConnection &data) {
+  _myfile << "Out: "  << data.getIp() << " - "
 		<< "\"" << data.getRawReq() <<"\" "
 		<< data.getRes().getStatusCode() << " "
 		<< "\"" << data.getRes().getStatusMes() << "\" - "
-		<< asctime(this->_curtime);
+		<< asctime(_curtime);
 }
 
 LogPreSend::LogPreSend() {
-  this->_tm = time(NULL);
+  priority = 1000;
+  _tm = time(NULL);
   _curtime = localtime ( &_tm );
-  this->_myfile.open("log.txt", std::ios::in | std::ios::out | std::ios::app);
+  _myfile.open("log.txt", std::ios::in | std::ios::out | std::ios::app);
 }
 
 LogPreSend::~LogPreSend() {
-  this->_myfile.close();
+  _myfile.close();
 }
 
 int LogPreSend::getPriority() const {
-  return (this->priority);
+  return (priority);
 }

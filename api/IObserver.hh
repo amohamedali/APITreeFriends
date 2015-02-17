@@ -1,6 +1,8 @@
 #ifndef IOBSERVER_HH
 #define IOBSERVER_HH
 
+#include <list>
+#include "IRunnable.hh"
 /*!
 * \file IHTTPMes.hh
 * \brief Interface des messages

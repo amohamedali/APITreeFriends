@@ -1,23 +1,24 @@
-#include "LogPostConnection.cpp"
+#include "LogPostConnection.hh"
 
-void    LogPostConnection::run(IConnection &data) {
-  this->_myfile << "In: " << data.getIp() << " - "
+void    LogPostConnection::run(APITreeFriends::IConnection &data) {
+  _myfile << "In: " << data.getIp() << " - "
 		<< "\"" << data.getRawReq() <<"\" "
 		<< data.getRes().getStatusCode() << " "
-		<< "\"" << data.getstatutMes() << "\" - "
-		<< asctime(this->_curtime);
+		<< "\"" << data.getRes().getStatusMes() << "\" - "
+		<< asctime(_curtime);
 }
 
 LogPostConnection::LogPostConnection() {
-  this->_tm = time(NULL);
+  priority = 1000;
+  _tm = time(NULL);
   _curtime = localtime ( &_tm );
-  this->_myfile.open("log.txt", std::ios::in | std::ios::out | std::ios::app);
+  _myfile.open("log.txt", std::ios::in | std::ios::out | std::ios::app);
 }
 
 LogPostConnection::~LogPostConnection() {
-  this->_myfile.close();
+  _myfile.close();
 }
 
 int LogPostConnection::getPriority() const {
-  return (this->priority);
+  return (priority);
 }
