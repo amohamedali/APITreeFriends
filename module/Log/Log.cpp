@@ -1,4 +1,4 @@
-#include "ModuleLog.hpp"
+#include "Log.hh"
 
 Log::Log() {
   hookinet[POST_CONNECTION] = new LogPostConnection();
