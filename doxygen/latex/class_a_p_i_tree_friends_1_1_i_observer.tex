@@ -1,0 +1,49 @@
+\hypertarget{class_a_p_i_tree_friends_1_1_i_observer}{}\section{A\+P\+I\+Tree\+Friends\+:\+:I\+Observer Class Reference}
+\label{class_a_p_i_tree_friends_1_1_i_observer}\index{A\+P\+I\+Tree\+Friends\+::\+I\+Observer@{A\+P\+I\+Tree\+Friends\+::\+I\+Observer}}
+
+
+Interface du module\+Manager Le \hyperlink{class_a_p_i_tree_friends_1_1_i_observer}{I\+Observer} contiendra les I\+Runnables de chaque \hyperlink{class_a_p_i_tree_friends_1_1_i_module}{I\+Module}.  
+
+
+
+
+{\ttfamily \#include $<$I\+Observer.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_a_p_i_tree_friends_1_1_i_observer_a7d54be37ac72e6d2dc8b8f1b1c62a5d2}{}virtual \hyperlink{class_a_p_i_tree_friends_1_1_i_observer_a7d54be37ac72e6d2dc8b8f1b1c62a5d2}{$\sim$\+I\+Observer} ()\label{class_a_p_i_tree_friends_1_1_i_observer_a7d54be37ac72e6d2dc8b8f1b1c62a5d2}
+
+\begin{DoxyCompactList}\small\item\em Virtual Destructeur. \end{DoxyCompactList}\item 
+virtual std\+::list$<$ \hyperlink{class_a_p_i_tree_friends_1_1_i_runnable}{I\+Runnable} $\ast$ $>$ \& \hyperlink{class_a_p_i_tree_friends_1_1_i_observer_a1042e5c00cf8451611b01d6b60a80d7d}{get\+Runnables} (const \hyperlink{namespace_a_p_i_tree_friends_a3943902c0fe96b820b0261e510dcb720}{e\+Hook}) const =0
+\begin{DoxyCompactList}\small\item\em Renvoie la liste de runnable assignée à un hook. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface du module\+Manager Le \hyperlink{class_a_p_i_tree_friends_1_1_i_observer}{I\+Observer} contiendra les I\+Runnables de chaque \hyperlink{class_a_p_i_tree_friends_1_1_i_module}{I\+Module}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_a_p_i_tree_friends_1_1_i_observer_a1042e5c00cf8451611b01d6b60a80d7d}{}\index{A\+P\+I\+Tree\+Friends\+::\+I\+Observer@{A\+P\+I\+Tree\+Friends\+::\+I\+Observer}!get\+Runnables@{get\+Runnables}}
+\index{get\+Runnables@{get\+Runnables}!A\+P\+I\+Tree\+Friends\+::\+I\+Observer@{A\+P\+I\+Tree\+Friends\+::\+I\+Observer}}
+\subsubsection[{get\+Runnables}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::list$<${\bf I\+Runnable} $\ast$$>$\& A\+P\+I\+Tree\+Friends\+::\+I\+Observer\+::get\+Runnables (
+\begin{DoxyParamCaption}
+\item[{const {\bf e\+Hook}}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_a_p_i_tree_friends_1_1_i_observer_a1042e5c00cf8451611b01d6b60a80d7d}
+
+
+Renvoie la liste de runnable assignée à un hook. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e\+Hook} & L\textquotesingle{}enum du hook correspondant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::list$<$\+I\+Runnable $\ast$$>$ La liste de runnable de ce hook 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+api/I\+Observer.\+hh\end{DoxyCompactItemize}

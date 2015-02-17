@@ -1,0 +1,45 @@
+\hypertarget{namespace_a_p_i_tree_friends}{}\section{A\+P\+I\+Tree\+Friends Namespace Reference}
+\label{namespace_a_p_i_tree_friends}\index{A\+P\+I\+Tree\+Friends@{A\+P\+I\+Tree\+Friends}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_a_p_i_tree_friends_1_1_i_connection}{I\+Connection}
+\begin{DoxyCompactList}\small\item\em Classe contenant les données concernant la connexion, la requète, et la réponse. \end{DoxyCompactList}\item 
+class \hyperlink{class_a_p_i_tree_friends_1_1_i_h_t_t_p_mes}{I\+H\+T\+T\+P\+Mes}
+\begin{DoxyCompactList}\small\item\em Interface des messages contenu dans \hyperlink{class_a_p_i_tree_friends_1_1_i_h_t_t_p_req}{I\+H\+T\+T\+P\+Req} et \hyperlink{class_a_p_i_tree_friends_1_1_i_h_t_t_p_res}{I\+H\+T\+T\+P\+Res}. \end{DoxyCompactList}\item 
+class \hyperlink{class_a_p_i_tree_friends_1_1_i_h_t_t_p_req}{I\+H\+T\+T\+P\+Req}
+\begin{DoxyCompactList}\small\item\em Classe représentant les requêtes. \end{DoxyCompactList}\item 
+class \hyperlink{class_a_p_i_tree_friends_1_1_i_h_t_t_p_res}{I\+H\+T\+T\+P\+Res}
+\begin{DoxyCompactList}\small\item\em Classe permettant de récupérer les donnés propre à la réponse présente dans la classe mère \hyperlink{class_a_p_i_tree_friends_1_1_i_h_t_t_p_mes}{I\+H\+T\+T\+P\+Mes}. \end{DoxyCompactList}\item 
+class \hyperlink{class_a_p_i_tree_friends_1_1_i_module}{I\+Module}
+\begin{DoxyCompactList}\small\item\em Interface d\textquotesingle{}implémentation des modules Les \hyperlink{class_a_p_i_tree_friends_1_1_i_module}{I\+Module} ne sont en définitive que des containers de \hyperlink{class_a_p_i_tree_friends_1_1_i_runnable}{I\+Runnable}. \end{DoxyCompactList}\item 
+class \hyperlink{class_a_p_i_tree_friends_1_1_i_observer}{I\+Observer}
+\begin{DoxyCompactList}\small\item\em Interface du module\+Manager Le \hyperlink{class_a_p_i_tree_friends_1_1_i_observer}{I\+Observer} contiendra les I\+Runnables de chaque \hyperlink{class_a_p_i_tree_friends_1_1_i_module}{I\+Module}. \end{DoxyCompactList}\item 
+class \hyperlink{class_a_p_i_tree_friends_1_1_i_runnable}{I\+Runnable}
+\begin{DoxyCompactList}\small\item\em Classe représentant la gestion d\textquotesingle{}exécution par priorité des modules. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespace_a_p_i_tree_friends_a746fed077303e8587bfa0e8f2dbf4997}{}enum \hyperlink{namespace_a_p_i_tree_friends_a746fed077303e8587bfa0e8f2dbf4997}{e\+Connection\+State} \{ {\bfseries C\+O\+N\+T\+I\+N\+U\+E}, 
+{\bfseries C\+L\+O\+S\+E\+\_\+\+F\+D}, 
+{\bfseries S\+T\+O\+P}
+ \}\label{namespace_a_p_i_tree_friends_a746fed077303e8587bfa0e8f2dbf4997}
+
+\begin{DoxyCompactList}\small\item\em Enum des états possibles de connection. \end{DoxyCompactList}\item 
+\hypertarget{namespace_a_p_i_tree_friends_a3943902c0fe96b820b0261e510dcb720}{}enum \hyperlink{namespace_a_p_i_tree_friends_a3943902c0fe96b820b0261e510dcb720}{e\+Hook} \{ \\*
+{\bfseries P\+O\+S\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N}, 
+{\bfseries P\+R\+E\+\_\+\+P\+A\+R\+S\+I\+N\+G}, 
+{\bfseries P\+O\+S\+T\+\_\+\+P\+A\+R\+S\+I\+N\+G}, 
+{\bfseries P\+R\+E\+\_\+\+M\+E\+T\+H\+O\+D}, 
+\\*
+{\bfseries P\+O\+S\+T\+\_\+\+M\+E\+T\+H\+O\+D}, 
+{\bfseries P\+R\+E\+\_\+\+C\+O\+N\+T\+E\+N\+T}, 
+{\bfseries P\+O\+S\+T\+\_\+\+C\+O\+N\+T\+E\+N\+T}, 
+{\bfseries P\+R\+E\+\_\+\+S\+E\+N\+D}
+ \}\label{namespace_a_p_i_tree_friends_a3943902c0fe96b820b0261e510dcb720}
+
+\begin{DoxyCompactList}\small\item\em Enum des différents point de hook durant le traitement d\textquotesingle{}un I\+Connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Espace de nommage regroupant la totalité des classes de l\textquotesingle{}api 

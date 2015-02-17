@@ -1,0 +1,48 @@
+\hyperlink{namespace_a_p_i_tree_friends}{A\+P\+I\+Tree\+Friends}
+
+\subsection*{\#\# Documentation A\+P\+I }
+
+
+\begin{DoxyItemize}
+\item Introduction
+\item Fonctionnement
+\item F\+A\+Q
+\end{DoxyItemize}
+
+\subsection*{\#\#\# Introduction }
+
+La team K-\/\+P\+U\+S\+H propose aux élèves d\textquotesingle{}epitech sa solution d\textquotesingle{}api dans le cadre du projet Zia, \hyperlink{namespace_a_p_i_tree_friends}{A\+P\+I\+Tree\+Friends} !!!
+
+Utiliser \hyperlink{namespace_a_p_i_tree_friends}{A\+P\+I\+Tree\+Friends} vous permettra d\textquotesingle{}implémenter tous vos modules, les faire fonctionner ensemble et sans conflits.
+
+La team K-\/\+P\+U\+S\+H s\textquotesingle{}engage à répondre au moindre de vos soucis. La team K-\/\+P\+U\+S\+H représente.
+
+\subsection*{\#\#\# Fonctionnement }
+
+Pour que votre module puisse fonctionner avec \hyperlink{namespace_a_p_i_tree_friends}{A\+P\+I\+Tree\+Friends} il devra respecter une architecture précise.
+
+Votre module devra hériter de I\+Module. Nous verrons ce que cela implique aprés avoir détailé la structure attendu du Module.
+
+Le code de traitement de votre module, devra être situé dans une classe héritant de I\+Runable et être instancié dans votre module.
+
+\subparagraph*{Pourquoi ?}
+
+\hyperlink{namespace_a_p_i_tree_friends}{A\+P\+I\+Tree\+Friends} permet à un module de se plugger à différente étape du traitement (hook) et de proposer un fonctionnement différent en fonction de son placement.
+
+Par exemple, un module logger qui souhaiterais afficher des informations en rouge avant l\textquotesingle{}encoding du content et en bleu aprés l\textquotesingle{}encoding devra avoir deux instance de classe héritant de I\+Runable dans son module.
+
+Le module peut ainsi être vu comme un container de I\+Runable.
+
+L\textquotesingle{}interface I\+Module impose aux différents modules de renvoyer une std\+::map$<$e\+Connection\+State, I\+Runable $\ast$$>$ lors de l\textquotesingle{}appel de fonction plug().
+
+Concernant la gestion de la priorité sur un hook, I\+Runable impose à vos classes une fonction get\+Priority() qui nous renverra le niveau de priorité sur le hook.
+
+Le niveau de priorité va de 1 à 1000, en sachant que plus le niveau est haut plus l\textquotesingle{}appel sera effectué à la fin.
+
+La fonction run des I\+Runable sera appelé avec en paramètre une référence sur un I\+Connection contenant la totalité des données nécessaire.
+
+Le I\+Connection contient les informations relatives à la connection avec le client, ainsi que sur la requète et la réponse via un I\+H\+T\+T\+P\+Req et un I\+H\+T\+T\+P\+Res, qui héritent tout deux de I\+H\+T\+T\+P\+Mes.
+
+I\+H\+T\+T\+P\+Req et I\+H\+T\+T\+P\+Res correspondent respectivement à la requète en cours de traitement et à la réponse en cours de création.
+
+\subsection*{\#\#\# Example }
