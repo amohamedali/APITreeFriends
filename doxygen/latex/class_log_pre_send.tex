@@ -1,0 +1,61 @@
+\hypertarget{class_log_pre_send}{}\section{Log\+Pre\+Send Class Reference}
+\label{class_log_pre_send}\index{Log\+Pre\+Send@{Log\+Pre\+Send}}
+
+
+Classe heritant de I\+Runnable.  
+
+
+
+
+{\ttfamily \#include $<$Log\+Pre\+Send.\+hh$>$}
+
+Inheritance diagram for Log\+Pre\+Send\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_log_pre_send}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_log_pre_send_a3dd3d6693cb8677191570c883baa8fed}{}\hyperlink{class_log_pre_send_a3dd3d6693cb8677191570c883baa8fed}{Log\+Pre\+Send} ()\label{class_log_pre_send_a3dd3d6693cb8677191570c883baa8fed}
+
+\begin{DoxyCompactList}\small\item\em Constructeur, initialise la gestion du temps, et ouvre le fichier de log. \end{DoxyCompactList}\item 
+\hypertarget{class_log_pre_send_a7be6452e2d38a51f84f856a9a543fc7d}{}\hyperlink{class_log_pre_send_a7be6452e2d38a51f84f856a9a543fc7d}{$\sim$\+Log\+Pre\+Send} ()\label{class_log_pre_send_a7be6452e2d38a51f84f856a9a543fc7d}
+
+\begin{DoxyCompactList}\small\item\em Destructeur, ferme le fichier de log. \end{DoxyCompactList}\item 
+int \hyperlink{class_log_pre_send_a8dd83e1661602e3f2c6318e1fb6b695f}{get\+Priority} () const 
+\begin{DoxyCompactList}\small\item\em Getter de la priorité du module dans le hook P\+O\+S\+T\+E\+N\+D. \end{DoxyCompactList}\item 
+\hypertarget{class_log_pre_send_aef56513bfe060da02d63a86519c1e694}{}void \hyperlink{class_log_pre_send_aef56513bfe060da02d63a86519c1e694}{run} (\hyperlink{class_a_p_i_tree_friends_1_1_i_connection}{A\+P\+I\+Tree\+Friends\+::\+I\+Connection} \&)\label{class_log_pre_send_aef56513bfe060da02d63a86519c1e694}
+
+\begin{DoxyCompactList}\small\item\em Methode a lancer dans le hook P\+O\+S\+T\+E\+N\+D. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe heritant de I\+Runnable. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_log_pre_send_a8dd83e1661602e3f2c6318e1fb6b695f}{}\index{Log\+Pre\+Send@{Log\+Pre\+Send}!get\+Priority@{get\+Priority}}
+\index{get\+Priority@{get\+Priority}!Log\+Pre\+Send@{Log\+Pre\+Send}}
+\subsubsection[{get\+Priority}]{\setlength{\rightskip}{0pt plus 5cm}int Log\+Pre\+Send\+::get\+Priority (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_log_pre_send_a8dd83e1661602e3f2c6318e1fb6b695f}
+
+
+Getter de la priorité du module dans le hook P\+O\+S\+T\+E\+N\+D. 
+
+\begin{DoxyReturn}{Returns}
+int , 1000, pour passer en dernier (C\textquotesingle{}est des log ...) 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_a_p_i_tree_friends_1_1_i_runnable_aeb9109b9073b2514f22ff0d8feac144b}{A\+P\+I\+Tree\+Friends\+::\+I\+Runnable}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+module/\+Log/Log\+Pre\+Send.\+hh\item 
+module/\+Log/Log\+Pre\+Send.\+cpp\end{DoxyCompactItemize}

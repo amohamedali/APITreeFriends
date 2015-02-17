@@ -8,6 +8,6 @@ var searchData=
   ['_7eiobserver',['~IObserver',['../class_a_p_i_tree_friends_1_1_i_observer.html#a7d54be37ac72e6d2dc8b8f1b1c62a5d2',1,'APITreeFriends::IObserver']]],
   ['_7eirunnable',['~IRunnable',['../class_a_p_i_tree_friends_1_1_i_runnable.html#a7eceec6f7111a22eff546bca302b7847',1,'APITreeFriends::IRunnable']]],
   ['_7elog',['~Log',['../class_log.html#a0fbfda88fbee5027c89f6eb121059360',1,'Log']]],
-  ['_7elogpostconnexion',['~LogPostConnexion',['../class_log_post_connexion.html#a94c24ed16efd4f71efca9d9812f2551a',1,'LogPostConnexion']]],
-  ['_7elogpostsend',['~LogPostSend',['../class_log_post_send.html#aaa2cd3259efc8e69276b7980e2c85a9d',1,'LogPostSend']]]
+  ['_7elogpostconnection',['~LogPostConnection',['../class_log_post_connection.html#a7e58b3c3ea085fc43a5e9cf3318af9c4',1,'LogPostConnection']]],
+  ['_7elogpresend',['~LogPreSend',['../class_log_pre_send.html#a7be6452e2d38a51f84f856a9a543fc7d',1,'LogPreSend']]]
 ];

@@ -7,7 +7,7 @@ var searchData=
   ['getip',['getIp',['../class_a_p_i_tree_friends_1_1_i_connection.html#ae94c91d10b9ebb3b5627e18d79836b78',1,'APITreeFriends::IConnection']]],
   ['getmethod',['getMethod',['../class_a_p_i_tree_friends_1_1_i_h_t_t_p_req.html#ab764c8212ee9ab3874b7a032570a646d',1,'APITreeFriends::IHTTPReq']]],
   ['getport',['getPort',['../class_a_p_i_tree_friends_1_1_i_connection.html#aadcbd2640a8a3b9d4fdf376943c2b070',1,'APITreeFriends::IConnection']]],
-  ['getpriority',['getPriority',['../class_a_p_i_tree_friends_1_1_i_runnable.html#aeb9109b9073b2514f22ff0d8feac144b',1,'APITreeFriends::IRunnable::getPriority()'],['../class_log_post_send.html#a9270fad33ee9c97d49c27ddaa30a746b',1,'LogPostSend::getPriority()']]],
+  ['getpriority',['getPriority',['../class_a_p_i_tree_friends_1_1_i_runnable.html#aeb9109b9073b2514f22ff0d8feac144b',1,'APITreeFriends::IRunnable::getPriority()'],['../class_log_post_connection.html#a1b2b1757ad578d1a91c3908e9fbad5fa',1,'LogPostConnection::getPriority()'],['../class_log_pre_send.html#a8dd83e1661602e3f2c6318e1fb6b695f',1,'LogPreSend::getPriority()']]],
   ['getrawreq',['getRawReq',['../class_a_p_i_tree_friends_1_1_i_connection.html#aebde1da91e09e51a4c8827ee30ccf32f',1,'APITreeFriends::IConnection']]],
   ['getreq',['getReq',['../class_a_p_i_tree_friends_1_1_i_connection.html#a40ab190c237fadebcff0fd5366a1e07e',1,'APITreeFriends::IConnection']]],
   ['getres',['getRes',['../class_a_p_i_tree_friends_1_1_i_connection.html#ae8fe73681087ea566a866916f3a8ef6f',1,'APITreeFriends::IConnection']]],
