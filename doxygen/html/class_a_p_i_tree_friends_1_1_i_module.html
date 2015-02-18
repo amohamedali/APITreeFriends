@@ -116,6 +116,9 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_p_i_tree_friends_1_1_i_module.html#aa22ef80601340718cee4f78eec47b9ba">~IModule</a> ()</td></tr>
 <tr class="memdesc:aa22ef80601340718cee4f78eec47b9ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur virtuel. <br /></td></tr>
 <tr class="separator:aa22ef80601340718cee4f78eec47b9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47ffe9b3988e2f608687cdf3d9e4210e"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_p_i_tree_friends_1_1_i_module.html#a47ffe9b3988e2f608687cdf3d9e4210e">getLabel</a> () const =0</td></tr>
+<tr class="memdesc:a47ffe9b3988e2f608687cdf3d9e4210e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter du label du module.  <a href="#a47ffe9b3988e2f608687cdf3d9e4210e">More...</a><br /></td></tr>
+<tr class="separator:a47ffe9b3988e2f608687cdf3d9e4210e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9efbed18c7d4b44ee8c455a39e997cea"><td class="memItemLeft" align="right" valign="top">virtual const std::map&lt; <a class="el" href="namespace_a_p_i_tree_friends.html#a3943902c0fe96b820b0261e510dcb720">eHook</a>, <a class="el" href="class_a_p_i_tree_friends_1_1_i_runnable.html">IRunnable</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_p_i_tree_friends_1_1_i_module.html#a9efbed18c7d4b44ee8c455a39e997cea">plug</a> () const =0</td></tr>
 <tr class="memdesc:a9efbed18c7d4b44ee8c455a39e997cea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter de la map de hook du Module Le module renvoie la map&lt;eHook, IRunnable*&gt; spécifique au module.  <a href="#a9efbed18c7d4b44ee8c455a39e997cea">More...</a><br /></td></tr>
 <tr class="separator:a9efbed18c7d4b44ee8c455a39e997cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,6 +126,32 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface d'implémentation des modules Les <a class="el" href="class_a_p_i_tree_friends_1_1_i_module.html" title="Interface d&#39;implémentation des modules Les IModule ne sont en définitive que des containers de IRunna...">IModule</a> ne sont en définitive que des containers de <a class="el" href="class_a_p_i_tree_friends_1_1_i_runnable.html" title="Classe représentant la gestion d&#39;exécution par priorité des modules. ">IRunnable</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a47ffe9b3988e2f608687cdf3d9e4210e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::string&amp; APITreeFriends::IModule::getLabel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Getter du label du module. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::string Identifiant du module </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a9efbed18c7d4b44ee8c455a39e997cea"></a>
 <div class="memitem">
 <div class="memproto">
@@ -157,7 +186,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 17 2015 19:37:18 for APITreeFriends by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 18 2015 19:15:58 for APITreeFriends by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>
