@@ -5,7 +5,6 @@
 
 * Introduction
 * Fonctionnement
-* FAQ
 
 ### Introduction
 ----------------
@@ -37,16 +36,16 @@ Le module peut ainsi être vu comme un container de IRunable.
 
 L'interface IModule impose aux différents modules de renvoyer une std::map<eConnectionState, IRunable *> lors de l'appel de fonction plug().
 
-Concernant la gestion de la priorité sur un hook, IRunable impose à vos classes une fonction getPriority() qui nous renverra le niveau de priorité sur le hook.
+Concernant la gestion de la priorité sur un hook, ce ne sont pas les modules qui définissent individuellement leur priorité. Le fichier de conf module.config devra être correctement configuré pour que les modules soient bien load et appellé dans un ordre spécifié.
 
-Le niveau de priorité va de 1 à 1000, en sachant que plus le niveau est haut plus l'appel sera effectué à la fin.
+Ce fichier doit respecter un format précis. A savoir :
+Une premiere ligne qui va référencer tous les modules
+'{MODULES=' + [ '[' + ModuleName + '],']* + '},'
+Une ligne par hook en sachant que l'ordre des modules sera l'ordre d'appel.
+'{' + HooKName + '=' + [ '[' + ModuleName + '],']* + '},'
 
 La fonction run des IRunable sera appelé avec en paramètre une référence sur un IConnection contenant la totalité des données nécessaire.
 
 Le IConnection contient les informations relatives à la connection avec le client, ainsi que sur la requète et la réponse via un IHTTPReq et un IHTTPRes, qui héritent tout deux de IHTTPMes.
 
 IHTTPReq et IHTTPRes correspondent respectivement à la requète en cours de traitement et à la réponse en cours de création.
-
-
-### Example
-------------------

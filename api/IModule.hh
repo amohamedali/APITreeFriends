@@ -28,6 +28,11 @@ namespace APITreeFriends
      */
     virtual ~IModule() {}
     /*!
+    * \brief Getter du label du module
+    * \return std::string Identifiant du module
+    */
+    virtual const std::string   &getLabel() const = 0;
+    /*!
      * \brief Getter de la map de hook du Module
      * Le module renvoie la map<eHook, IRunnable*> spécifique au module
      * \return std::map<eHook, IRunnable*> Map de plug du module
