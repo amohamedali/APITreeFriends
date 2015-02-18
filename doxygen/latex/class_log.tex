@@ -1,0 +1,58 @@
+\hypertarget{class_log}{}\section{Log Class Reference}
+\label{class_log}\index{Log@{Log}}
+
+
+Classe contenant la map des hooks où intervient \hyperlink{class_log}{Log}, aindi que les I\+Runnable s associés à ces hooks, Herite de I\+Module.  
+
+
+
+
+{\ttfamily \#include $<$Log.\+hh$>$}
+
+Inheritance diagram for Log\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_log}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_log_af6071a60aa52b6c1b511f99b4bc1b8fe}{}\hyperlink{class_log_af6071a60aa52b6c1b511f99b4bc1b8fe}{Log} ()\label{class_log_af6071a60aa52b6c1b511f99b4bc1b8fe}
+
+\begin{DoxyCompactList}\small\item\em Constructeur, initialise la map de hooks et les I\+Runnable s correspondants. \end{DoxyCompactList}\item 
+\hypertarget{class_log_a0fbfda88fbee5027c89f6eb121059360}{}\hyperlink{class_log_a0fbfda88fbee5027c89f6eb121059360}{$\sim$\+Log} ()\label{class_log_a0fbfda88fbee5027c89f6eb121059360}
+
+\begin{DoxyCompactList}\small\item\em Destructeur, détruit les I\+Runnable s. \end{DoxyCompactList}\item 
+const std\+::map$<$ \hyperlink{namespace_a_p_i_tree_friends_a3943902c0fe96b820b0261e510dcb720}{A\+P\+I\+Tree\+Friends\+::e\+Hook}, \hyperlink{class_a_p_i_tree_friends_1_1_i_runnable}{A\+P\+I\+Tree\+Friends\+::\+I\+Runnable} $\ast$ $>$ \& \hyperlink{class_log_a37a35c29d8d337a510bf82e94a7c4350}{plug} () const 
+\begin{DoxyCompactList}\small\item\em Getter de la map de hook du Module Le module renvoie la map$<$e\+Hook, I\+Runnable$\ast$$>$ spécifique au module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe contenant la map des hooks où intervient \hyperlink{class_log}{Log}, aindi que les I\+Runnable s associés à ces hooks, Herite de I\+Module. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_log_a37a35c29d8d337a510bf82e94a7c4350}{}\index{Log@{Log}!plug@{plug}}
+\index{plug@{plug}!Log@{Log}}
+\subsubsection[{plug}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::map$<$ {\bf e\+Hook}, {\bf I\+Runnable} $\ast$ $>$ \& Log\+::plug (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_log_a37a35c29d8d337a510bf82e94a7c4350}
+
+
+Getter de la map de hook du Module Le module renvoie la map$<$e\+Hook, I\+Runnable$\ast$$>$ spécifique au module. 
+
+\begin{DoxyReturn}{Returns}
+std\+::map$<$e\+Hook, I\+Runnable$\ast$$>$ Map de plug du module 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_a_p_i_tree_friends_1_1_i_module_a9efbed18c7d4b44ee8c455a39e997cea}{A\+P\+I\+Tree\+Friends\+::\+I\+Module}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+module/\+Log/\hyperlink{_log_8hh}{Log.\+hh}\item 
+module/\+Log/Log.\+cpp\end{DoxyCompactItemize}

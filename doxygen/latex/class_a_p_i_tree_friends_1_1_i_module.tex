@@ -1,0 +1,54 @@
+\hypertarget{class_a_p_i_tree_friends_1_1_i_module}{}\section{A\+P\+I\+Tree\+Friends\+:\+:I\+Module Class Reference}
+\label{class_a_p_i_tree_friends_1_1_i_module}\index{A\+P\+I\+Tree\+Friends\+::\+I\+Module@{A\+P\+I\+Tree\+Friends\+::\+I\+Module}}
+
+
+Interface d\textquotesingle{}implémentation des modules Les \hyperlink{class_a_p_i_tree_friends_1_1_i_module}{I\+Module} ne sont en définitive que des containers de \hyperlink{class_a_p_i_tree_friends_1_1_i_runnable}{I\+Runnable}.  
+
+
+
+
+{\ttfamily \#include $<$I\+Module.\+hh$>$}
+
+Inheritance diagram for A\+P\+I\+Tree\+Friends\+:\+:I\+Module\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_p_i_tree_friends_1_1_i_module}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_a_p_i_tree_friends_1_1_i_module_aa22ef80601340718cee4f78eec47b9ba}{}virtual \hyperlink{class_a_p_i_tree_friends_1_1_i_module_aa22ef80601340718cee4f78eec47b9ba}{$\sim$\+I\+Module} ()\label{class_a_p_i_tree_friends_1_1_i_module_aa22ef80601340718cee4f78eec47b9ba}
+
+\begin{DoxyCompactList}\small\item\em Destructeur virtuel. \end{DoxyCompactList}\item 
+virtual const std\+::map$<$ \hyperlink{namespace_a_p_i_tree_friends_a3943902c0fe96b820b0261e510dcb720}{e\+Hook}, \hyperlink{class_a_p_i_tree_friends_1_1_i_runnable}{I\+Runnable} $\ast$ $>$ \& \hyperlink{class_a_p_i_tree_friends_1_1_i_module_a9efbed18c7d4b44ee8c455a39e997cea}{plug} () const =0
+\begin{DoxyCompactList}\small\item\em Getter de la map de hook du Module Le module renvoie la map$<$e\+Hook, I\+Runnable$\ast$$>$ spécifique au module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface d\textquotesingle{}implémentation des modules Les \hyperlink{class_a_p_i_tree_friends_1_1_i_module}{I\+Module} ne sont en définitive que des containers de \hyperlink{class_a_p_i_tree_friends_1_1_i_runnable}{I\+Runnable}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_a_p_i_tree_friends_1_1_i_module_a9efbed18c7d4b44ee8c455a39e997cea}{}\index{A\+P\+I\+Tree\+Friends\+::\+I\+Module@{A\+P\+I\+Tree\+Friends\+::\+I\+Module}!plug@{plug}}
+\index{plug@{plug}!A\+P\+I\+Tree\+Friends\+::\+I\+Module@{A\+P\+I\+Tree\+Friends\+::\+I\+Module}}
+\subsubsection[{plug}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std\+::map$<${\bf e\+Hook}, {\bf I\+Runnable} $\ast$$>$\& A\+P\+I\+Tree\+Friends\+::\+I\+Module\+::plug (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_a_p_i_tree_friends_1_1_i_module_a9efbed18c7d4b44ee8c455a39e997cea}
+
+
+Getter de la map de hook du Module Le module renvoie la map$<$e\+Hook, I\+Runnable$\ast$$>$ spécifique au module. 
+
+\begin{DoxyReturn}{Returns}
+std\+::map$<$e\+Hook, I\+Runnable$\ast$$>$ Map de plug du module 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_log_a37a35c29d8d337a510bf82e94a7c4350}{Log}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+api/\hyperlink{_i_module_8hh}{I\+Module.\+hh}\end{DoxyCompactItemize}

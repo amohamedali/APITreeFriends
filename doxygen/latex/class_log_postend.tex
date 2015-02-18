@@ -1,0 +1,62 @@
+\hypertarget{class_log_postend}{}\section{Log\+Postend Class Reference}
+\label{class_log_postend}\index{Log\+Postend@{Log\+Postend}}
+
+
+Classe heritant de I\+Runable.  
+
+
+
+
+{\ttfamily \#include $<$Log\+Postend.\+hh$>$}
+
+Inheritance diagram for Log\+Postend\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_log_postend}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_log_postend_a9b9c371b5e5802f49ac0de16d0b82a4d}{}\hyperlink{class_log_postend_a9b9c371b5e5802f49ac0de16d0b82a4d}{Log\+Postend} ()\label{class_log_postend_a9b9c371b5e5802f49ac0de16d0b82a4d}
+
+\begin{DoxyCompactList}\small\item\em Constructeur, initialise la gestion du temps, et ouvre le fichier de log. \end{DoxyCompactList}\item 
+\hypertarget{class_log_postend_aea233a446b808bc924d5df607298d504}{}\hyperlink{class_log_postend_aea233a446b808bc924d5df607298d504}{$\sim$\+Log\+Postend} ()\label{class_log_postend_aea233a446b808bc924d5df607298d504}
+
+\begin{DoxyCompactList}\small\item\em Destructeur, ferme le fichier de log. \end{DoxyCompactList}\item 
+int \hyperlink{class_log_postend_ad082cc53015539843900bf0cec69f145}{get\+Priority} () const 
+\begin{DoxyCompactList}\small\item\em Getter de la priorité du module dans le hook P\+O\+S\+T\+E\+N\+D. \end{DoxyCompactList}\item 
+\hypertarget{class_log_postend_adcfbb7a63b3dfc28ea1efc517dd86a1d}{}void \hyperlink{class_log_postend_adcfbb7a63b3dfc28ea1efc517dd86a1d}{run} (I\+Connection \&)\label{class_log_postend_adcfbb7a63b3dfc28ea1efc517dd86a1d}
+
+\begin{DoxyCompactList}\small\item\em Methode a lancer dans le hook P\+O\+S\+T\+E\+N\+D. \end{DoxyCompactList}\item 
+\hypertarget{class_log_postend_adcfbb7a63b3dfc28ea1efc517dd86a1d}{}void {\bfseries run} (I\+Connection \&)\label{class_log_postend_adcfbb7a63b3dfc28ea1efc517dd86a1d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe heritant de I\+Runable. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_log_postend_ad082cc53015539843900bf0cec69f145}{}\index{Log\+Postend@{Log\+Postend}!get\+Priority@{get\+Priority}}
+\index{get\+Priority@{get\+Priority}!Log\+Postend@{Log\+Postend}}
+\subsubsection[{get\+Priority}]{\setlength{\rightskip}{0pt plus 5cm}int Log\+Postend\+::get\+Priority (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_log_postend_ad082cc53015539843900bf0cec69f145}
+
+
+Getter de la priorité du module dans le hook P\+O\+S\+T\+E\+N\+D. 
+
+\begin{DoxyReturn}{Returns}
+int , 1000, pour passer en dernier (C\textquotesingle{}est des log ...) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+module/\+Log/Log\+Postend.\+hh\item 
+module/\+Log/Module\+Log.\+hpp\item 
+module/\+Log/Log\+Postend.\+cpp\item 
+module/\+Log/Module\+Log.\+cpp\end{DoxyCompactItemize}

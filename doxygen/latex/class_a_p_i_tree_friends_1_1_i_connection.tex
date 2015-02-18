@@ -1,0 +1,196 @@
+\hypertarget{class_a_p_i_tree_friends_1_1_i_connection}{}\section{A\+P\+I\+Tree\+Friends\+:\+:I\+Connection Class Reference}
+\label{class_a_p_i_tree_friends_1_1_i_connection}\index{A\+P\+I\+Tree\+Friends\+::\+I\+Connection@{A\+P\+I\+Tree\+Friends\+::\+I\+Connection}}
+
+
+Classe contenant les données concernant la connexion, la requète, et la réponse.  
+
+
+
+
+{\ttfamily \#include $<$I\+Connection.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_a_p_i_tree_friends_1_1_i_connection_a4f7e27da80c02f008e355166293c7068}{}virtual \hyperlink{class_a_p_i_tree_friends_1_1_i_connection_a4f7e27da80c02f008e355166293c7068}{$\sim$\+I\+Connection} ()\label{class_a_p_i_tree_friends_1_1_i_connection_a4f7e27da80c02f008e355166293c7068}
+
+\begin{DoxyCompactList}\small\item\em Destructeur virtuel. \end{DoxyCompactList}\item 
+virtual short \hyperlink{class_a_p_i_tree_friends_1_1_i_connection_aadcbd2640a8a3b9d4fdf376943c2b070}{get\+Port} () const =0
+\begin{DoxyCompactList}\small\item\em Getter du port utilisé du coté du client. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_a_p_i_tree_friends_a746fed077303e8587bfa0e8f2dbf4997}{e\+Connection\+State} \hyperlink{class_a_p_i_tree_friends_1_1_i_connection_a6d0360981f75fbab7f45c2816b74d7c0}{get\+State} () const =0
+\begin{DoxyCompactList}\small\item\em Getter de l\textquotesingle{}état de connection (e\+Connection\+State) \end{DoxyCompactList}\item 
+virtual std\+::string \& \hyperlink{class_a_p_i_tree_friends_1_1_i_connection_aebde1da91e09e51a4c8827ee30ccf32f}{get\+Raw\+Req} () const =0
+\begin{DoxyCompactList}\small\item\em Getter de la requète brut (startline + header + body) \end{DoxyCompactList}\item 
+virtual std\+::string \& \hyperlink{class_a_p_i_tree_friends_1_1_i_connection_ae94c91d10b9ebb3b5627e18d79836b78}{get\+Ip} () const =0
+\begin{DoxyCompactList}\small\item\em Getter de l\textquotesingle{}I\+P du client. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_a_p_i_tree_friends_1_1_i_h_t_t_p_req}{I\+H\+T\+T\+P\+Req} \& \hyperlink{class_a_p_i_tree_friends_1_1_i_connection_a40ab190c237fadebcff0fd5366a1e07e}{get\+Req} () const =0
+\begin{DoxyCompactList}\small\item\em Getter de la requète sous forme de \hyperlink{class_a_p_i_tree_friends_1_1_i_h_t_t_p_req}{I\+H\+T\+T\+P\+Req}. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_a_p_i_tree_friends_1_1_i_h_t_t_p_res}{I\+H\+T\+T\+P\+Res} \& \hyperlink{class_a_p_i_tree_friends_1_1_i_connection_ae8fe73681087ea566a866916f3a8ef6f}{get\+Res} () const =0
+\begin{DoxyCompactList}\small\item\em Getter de la réponse sous forme de \hyperlink{class_a_p_i_tree_friends_1_1_i_h_t_t_p_res}{I\+H\+T\+T\+P\+Res}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_a_p_i_tree_friends_1_1_i_connection_ab2e4c4d259cc43e4ac5a610a15be38c0}{set\+Port} (const short)=0
+\begin{DoxyCompactList}\small\item\em Setter du Port du client. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_a_p_i_tree_friends_1_1_i_connection_ac6fa604244d43e6550449d54a08c9727}{set\+State} (const \hyperlink{namespace_a_p_i_tree_friends_a746fed077303e8587bfa0e8f2dbf4997}{e\+Connection\+State})=0
+\begin{DoxyCompactList}\small\item\em Setter de l\textquotesingle{}état de connexion. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_a_p_i_tree_friends_1_1_i_connection_a55f642d33ed7245bbee77f602049221b}{set\+Raw\+Req} (const std\+::string \&)=0
+\begin{DoxyCompactList}\small\item\em Setter de la requète brute. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_a_p_i_tree_friends_1_1_i_connection_aea188cff810b445690e36047a4ea7b65}{set\+Ip} (const std\+::string \&)=0
+\begin{DoxyCompactList}\small\item\em Setter de l\textquotesingle{}I\+P du client. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe contenant les données concernant la connexion, la requète, et la réponse. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_a_p_i_tree_friends_1_1_i_connection_ae94c91d10b9ebb3b5627e18d79836b78}{}\index{A\+P\+I\+Tree\+Friends\+::\+I\+Connection@{A\+P\+I\+Tree\+Friends\+::\+I\+Connection}!get\+Ip@{get\+Ip}}
+\index{get\+Ip@{get\+Ip}!A\+P\+I\+Tree\+Friends\+::\+I\+Connection@{A\+P\+I\+Tree\+Friends\+::\+I\+Connection}}
+\subsubsection[{get\+Ip}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string\& A\+P\+I\+Tree\+Friends\+::\+I\+Connection\+::get\+Ip (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_a_p_i_tree_friends_1_1_i_connection_ae94c91d10b9ebb3b5627e18d79836b78}
+
+
+Getter de l\textquotesingle{}I\+P du client. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string \& , I\+P du client 
+\end{DoxyReturn}
+\hypertarget{class_a_p_i_tree_friends_1_1_i_connection_aadcbd2640a8a3b9d4fdf376943c2b070}{}\index{A\+P\+I\+Tree\+Friends\+::\+I\+Connection@{A\+P\+I\+Tree\+Friends\+::\+I\+Connection}!get\+Port@{get\+Port}}
+\index{get\+Port@{get\+Port}!A\+P\+I\+Tree\+Friends\+::\+I\+Connection@{A\+P\+I\+Tree\+Friends\+::\+I\+Connection}}
+\subsubsection[{get\+Port}]{\setlength{\rightskip}{0pt plus 5cm}virtual short A\+P\+I\+Tree\+Friends\+::\+I\+Connection\+::get\+Port (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_a_p_i_tree_friends_1_1_i_connection_aadcbd2640a8a3b9d4fdf376943c2b070}
+
+
+Getter du port utilisé du coté du client. 
+
+\begin{DoxyReturn}{Returns}
+short , Port du client 
+\end{DoxyReturn}
+\hypertarget{class_a_p_i_tree_friends_1_1_i_connection_aebde1da91e09e51a4c8827ee30ccf32f}{}\index{A\+P\+I\+Tree\+Friends\+::\+I\+Connection@{A\+P\+I\+Tree\+Friends\+::\+I\+Connection}!get\+Raw\+Req@{get\+Raw\+Req}}
+\index{get\+Raw\+Req@{get\+Raw\+Req}!A\+P\+I\+Tree\+Friends\+::\+I\+Connection@{A\+P\+I\+Tree\+Friends\+::\+I\+Connection}}
+\subsubsection[{get\+Raw\+Req}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string\& A\+P\+I\+Tree\+Friends\+::\+I\+Connection\+::get\+Raw\+Req (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_a_p_i_tree_friends_1_1_i_connection_aebde1da91e09e51a4c8827ee30ccf32f}
+
+
+Getter de la requète brut (startline + header + body) 
+
+\begin{DoxyReturn}{Returns}
+std\+::string \& , requète brute 
+\end{DoxyReturn}
+\hypertarget{class_a_p_i_tree_friends_1_1_i_connection_a40ab190c237fadebcff0fd5366a1e07e}{}\index{A\+P\+I\+Tree\+Friends\+::\+I\+Connection@{A\+P\+I\+Tree\+Friends\+::\+I\+Connection}!get\+Req@{get\+Req}}
+\index{get\+Req@{get\+Req}!A\+P\+I\+Tree\+Friends\+::\+I\+Connection@{A\+P\+I\+Tree\+Friends\+::\+I\+Connection}}
+\subsubsection[{get\+Req}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf I\+H\+T\+T\+P\+Req}\& A\+P\+I\+Tree\+Friends\+::\+I\+Connection\+::get\+Req (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_a_p_i_tree_friends_1_1_i_connection_a40ab190c237fadebcff0fd5366a1e07e}
+
+
+Getter de la requète sous forme de \hyperlink{class_a_p_i_tree_friends_1_1_i_h_t_t_p_req}{I\+H\+T\+T\+P\+Req}. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_a_p_i_tree_friends_1_1_i_h_t_t_p_req}{I\+H\+T\+T\+P\+Req} \& , objet contenant les informations concernant la requète 
+\end{DoxyReturn}
+\hypertarget{class_a_p_i_tree_friends_1_1_i_connection_ae8fe73681087ea566a866916f3a8ef6f}{}\index{A\+P\+I\+Tree\+Friends\+::\+I\+Connection@{A\+P\+I\+Tree\+Friends\+::\+I\+Connection}!get\+Res@{get\+Res}}
+\index{get\+Res@{get\+Res}!A\+P\+I\+Tree\+Friends\+::\+I\+Connection@{A\+P\+I\+Tree\+Friends\+::\+I\+Connection}}
+\subsubsection[{get\+Res}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf I\+H\+T\+T\+P\+Res}\& A\+P\+I\+Tree\+Friends\+::\+I\+Connection\+::get\+Res (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_a_p_i_tree_friends_1_1_i_connection_ae8fe73681087ea566a866916f3a8ef6f}
+
+
+Getter de la réponse sous forme de \hyperlink{class_a_p_i_tree_friends_1_1_i_h_t_t_p_res}{I\+H\+T\+T\+P\+Res}. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_a_p_i_tree_friends_1_1_i_h_t_t_p_res}{I\+H\+T\+T\+P\+Res} \& , objet contenant les informations concernant la réponse 
+\end{DoxyReturn}
+\hypertarget{class_a_p_i_tree_friends_1_1_i_connection_a6d0360981f75fbab7f45c2816b74d7c0}{}\index{A\+P\+I\+Tree\+Friends\+::\+I\+Connection@{A\+P\+I\+Tree\+Friends\+::\+I\+Connection}!get\+State@{get\+State}}
+\index{get\+State@{get\+State}!A\+P\+I\+Tree\+Friends\+::\+I\+Connection@{A\+P\+I\+Tree\+Friends\+::\+I\+Connection}}
+\subsubsection[{get\+State}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf e\+Connection\+State} A\+P\+I\+Tree\+Friends\+::\+I\+Connection\+::get\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_a_p_i_tree_friends_1_1_i_connection_a6d0360981f75fbab7f45c2816b74d7c0}
+
+
+Getter de l\textquotesingle{}état de connection (e\+Connection\+State) 
+
+\begin{DoxyReturn}{Returns}
+e\+Connection\+State , enum représentant l\textquotesingle{}état de la connexion 
+\end{DoxyReturn}
+\hypertarget{class_a_p_i_tree_friends_1_1_i_connection_aea188cff810b445690e36047a4ea7b65}{}\index{A\+P\+I\+Tree\+Friends\+::\+I\+Connection@{A\+P\+I\+Tree\+Friends\+::\+I\+Connection}!set\+Ip@{set\+Ip}}
+\index{set\+Ip@{set\+Ip}!A\+P\+I\+Tree\+Friends\+::\+I\+Connection@{A\+P\+I\+Tree\+Friends\+::\+I\+Connection}}
+\subsubsection[{set\+Ip}]{\setlength{\rightskip}{0pt plus 5cm}virtual void A\+P\+I\+Tree\+Friends\+::\+I\+Connection\+::set\+Ip (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_a_p_i_tree_friends_1_1_i_connection_aea188cff810b445690e36047a4ea7b65}
+
+
+Setter de l\textquotesingle{}I\+P du client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::string} & Nouvel I\+P client \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_a_p_i_tree_friends_1_1_i_connection_ab2e4c4d259cc43e4ac5a610a15be38c0}{}\index{A\+P\+I\+Tree\+Friends\+::\+I\+Connection@{A\+P\+I\+Tree\+Friends\+::\+I\+Connection}!set\+Port@{set\+Port}}
+\index{set\+Port@{set\+Port}!A\+P\+I\+Tree\+Friends\+::\+I\+Connection@{A\+P\+I\+Tree\+Friends\+::\+I\+Connection}}
+\subsubsection[{set\+Port}]{\setlength{\rightskip}{0pt plus 5cm}virtual void A\+P\+I\+Tree\+Friends\+::\+I\+Connection\+::set\+Port (
+\begin{DoxyParamCaption}
+\item[{const short}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_a_p_i_tree_friends_1_1_i_connection_ab2e4c4d259cc43e4ac5a610a15be38c0}
+
+
+Setter du Port du client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em short} & Nouveau Port client \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_a_p_i_tree_friends_1_1_i_connection_a55f642d33ed7245bbee77f602049221b}{}\index{A\+P\+I\+Tree\+Friends\+::\+I\+Connection@{A\+P\+I\+Tree\+Friends\+::\+I\+Connection}!set\+Raw\+Req@{set\+Raw\+Req}}
+\index{set\+Raw\+Req@{set\+Raw\+Req}!A\+P\+I\+Tree\+Friends\+::\+I\+Connection@{A\+P\+I\+Tree\+Friends\+::\+I\+Connection}}
+\subsubsection[{set\+Raw\+Req}]{\setlength{\rightskip}{0pt plus 5cm}virtual void A\+P\+I\+Tree\+Friends\+::\+I\+Connection\+::set\+Raw\+Req (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_a_p_i_tree_friends_1_1_i_connection_a55f642d33ed7245bbee77f602049221b}
+
+
+Setter de la requète brute. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::string} & \& , Requète brut \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_a_p_i_tree_friends_1_1_i_connection_ac6fa604244d43e6550449d54a08c9727}{}\index{A\+P\+I\+Tree\+Friends\+::\+I\+Connection@{A\+P\+I\+Tree\+Friends\+::\+I\+Connection}!set\+State@{set\+State}}
+\index{set\+State@{set\+State}!A\+P\+I\+Tree\+Friends\+::\+I\+Connection@{A\+P\+I\+Tree\+Friends\+::\+I\+Connection}}
+\subsubsection[{set\+State}]{\setlength{\rightskip}{0pt plus 5cm}virtual void A\+P\+I\+Tree\+Friends\+::\+I\+Connection\+::set\+State (
+\begin{DoxyParamCaption}
+\item[{const {\bf e\+Connection\+State}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_a_p_i_tree_friends_1_1_i_connection_ac6fa604244d43e6550449d54a08c9727}
+
+
+Setter de l\textquotesingle{}état de connexion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e\+Connection\+State} & Nouvel état de connexion \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+api/\hyperlink{_i_connection_8hh}{I\+Connection.\+hh}\end{DoxyCompactItemize}

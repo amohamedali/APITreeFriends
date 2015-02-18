@@ -1,0 +1,62 @@
+\hypertarget{class_a_p_i_tree_friends_1_1_i_runable}{}\section{A\+P\+I\+Tree\+Friends\+:\+:I\+Runable Class Reference}
+\label{class_a_p_i_tree_friends_1_1_i_runable}\index{A\+P\+I\+Tree\+Friends\+::\+I\+Runable@{A\+P\+I\+Tree\+Friends\+::\+I\+Runable}}
+
+
+Classe représentant la gestion d\textquotesingle{}exécution par priorité des modules.  
+
+
+
+
+{\ttfamily \#include $<$I\+Runable.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_a_p_i_tree_friends_1_1_i_runable_a27f59a13772ef3c82ff97358ef53d7a0}{}virtual \hyperlink{class_a_p_i_tree_friends_1_1_i_runable_a27f59a13772ef3c82ff97358ef53d7a0}{$\sim$\+I\+Runable} ()\label{class_a_p_i_tree_friends_1_1_i_runable_a27f59a13772ef3c82ff97358ef53d7a0}
+
+\begin{DoxyCompactList}\small\item\em Constructeur virtuel. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_a_p_i_tree_friends_1_1_i_runable_a9f283d64d34902f1c25910fd76c03190}{get\+Priority} () const =0
+\begin{DoxyCompactList}\small\item\em Getter de la priorité du module associé \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_a_p_i_tree_friends_1_1_i_runable_ae8aac6b834090b5367080bcefa69d70f}{run} (\hyperlink{class_a_p_i_tree_friends_1_1_i_connection}{I\+Connection} \&)=0
+\begin{DoxyCompactList}\small\item\em Exécution du module associé à la requête. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe représentant la gestion d\textquotesingle{}exécution par priorité des modules. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_a_p_i_tree_friends_1_1_i_runable_a9f283d64d34902f1c25910fd76c03190}{}\index{A\+P\+I\+Tree\+Friends\+::\+I\+Runable@{A\+P\+I\+Tree\+Friends\+::\+I\+Runable}!get\+Priority@{get\+Priority}}
+\index{get\+Priority@{get\+Priority}!A\+P\+I\+Tree\+Friends\+::\+I\+Runable@{A\+P\+I\+Tree\+Friends\+::\+I\+Runable}}
+\subsubsection[{get\+Priority}]{\setlength{\rightskip}{0pt plus 5cm}virtual int A\+P\+I\+Tree\+Friends\+::\+I\+Runable\+::get\+Priority (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_a_p_i_tree_friends_1_1_i_runable_a9f283d64d34902f1c25910fd76c03190}
+
+
+Getter de la priorité du module associé 
+
+\begin{DoxyReturn}{Returns}
+int, Retourne un nombre entre 1 et 100 représentant la priorité 
+\end{DoxyReturn}
+\hypertarget{class_a_p_i_tree_friends_1_1_i_runable_ae8aac6b834090b5367080bcefa69d70f}{}\index{A\+P\+I\+Tree\+Friends\+::\+I\+Runable@{A\+P\+I\+Tree\+Friends\+::\+I\+Runable}!run@{run}}
+\index{run@{run}!A\+P\+I\+Tree\+Friends\+::\+I\+Runable@{A\+P\+I\+Tree\+Friends\+::\+I\+Runable}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}virtual void A\+P\+I\+Tree\+Friends\+::\+I\+Runable\+::run (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Connection} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_a_p_i_tree_friends_1_1_i_runable_ae8aac6b834090b5367080bcefa69d70f}
+
+
+Exécution du module associé à la requête. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \hyperlink{class_a_p_i_tree_friends_1_1_i_connection}{I\+Connection} \& Variable contenant les informations d\textquotesingle{}une requête \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+api/\hyperlink{_i_runable_8hh}{I\+Runable.\+hh}\end{DoxyCompactItemize}
