@@ -39,6 +39,11 @@ namespace APITreeFriends
        */
       virtual ~IConnection() {}
       /*!
+       * \brief Getter du socket du client
+       * \return int , File descriptor
+       */
+      virtual int                 getSocket() const = 0;
+      /*!
        * \brief Getter du port utilisé du coté du client
        * \return short , Port du client
        */
